@@ -41,3 +41,15 @@ const clone = deepClone(obj)
 
 
 console.log(clone)
+
+function sum(num) {
+    if (typeof window.middleResult === 'undefined') {
+        window.middleResult = 0
+    }
+    window.middleResult = window.middleResult + num
+    return window.middleResult
+}
+
+console.log(sum(3))
+console.log(sum(5))
+console.log(sum(20))
